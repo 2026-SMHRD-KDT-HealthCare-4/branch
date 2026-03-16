@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>예진쌤만 회원관리 프로그램</h1>
+
+    <% if(id){ %>
+        <strong><%= id %>님 환영합니다</strong>
+        <a href="/">로그아웃</a>
+        <a href="/list">회원조회</a>
+    <% }else{ %>
+        <a href="/join">회원가입</a>
+        <a href="/login">로그인</a>
+    <% } %>
+
+    
+</body>
+</html>
